@@ -1,7 +1,7 @@
-const Carousel = () => {
+const Carousel = (props) => {
   return (
-    <div>
-      <img src="" alt="" />
+    <div key={indexImg}>
+      <img src={elemUrl} alt="" />;
     </div>
   );
 };

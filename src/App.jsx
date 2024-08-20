@@ -6,10 +6,7 @@ import Card from "./components/Card";
 function App() {
   return (
     <>
-      <header>NETFLIX</header>
-      <main>
-        <Card obj={movies} />
-      </main>
+      <Card data={movies} />;
     </>
   );
 }
