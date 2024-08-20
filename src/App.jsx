@@ -1,19 +1,15 @@
 import "./App.css";
 import movies from "./assets/movies.json";
 
+import Card from "./components/Card";
+
 function App() {
   return (
     <>
-      {movies.map((elem, index) => {
-        return (
-          <div key={index}>
-            <h1>{elem.category}</h1>
-            {elem.images.map((elemUrl, indexImg) => {
-              return <img key={indexImg} src={elemUrl} alt="" />;
-            })}
-          </div>
-        );
-      })}
+      <header>NETFLIX</header>
+      <main>
+        <Card obj={movies} />
+      </main>
     </>
   );
 }
